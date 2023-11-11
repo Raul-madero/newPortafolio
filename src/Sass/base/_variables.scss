@@ -1,5 +1,11 @@
-$primary: #fff;
-$secondary: #1abc9c;
-$info: #e67e22;
-$dark: #34495e;
-$success: #2ecc71;
+$theme-colors: (
+    'primary': #fff,
+    'secondary': #1abc9c,
+    'info': #e67e22,
+    'dark': #34495e,
+    'success': #2ecc71,
+);
+$fuenteTitulos: 'Lato', sans-serif;
+$fuenteParrafos: 'Noto Sans', sans-serif;
+
+@import '~bootstrap/scss/bootstrap';

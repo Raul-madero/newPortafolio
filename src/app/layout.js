@@ -1,5 +1,6 @@
 import { Lato, Noto_Sans } from 'next/font/google'
 import './globals.css'
+import '../Sass/app.scss'
 
 const lato = Lato({ subsets: ['latin'],
                     weight: "400",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={[lato.className, "bg-dark"]}>{children}</body>
+      <body className={noto.className}>{children}</body>
     </html>
   )
 }

@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Sass/app.scss'
 
 const Header = () => {
   return (
@@ -38,8 +38,37 @@ const Header = () => {
     </header>
   )
 }
+const Main = () => {
+    return (
+        <main className="hero container-xl align-items-start d-flex flex-column justify-content-center px-4 mb-5">
+        <div>
+            <h5 className="display-5 text-black-50">Hola!</h5>
+            <h1 className="display-1 text-black">Soy <span className="text-uppercase fw-bold text-info">Raul</span></h1>
+            <h3 className="display-3 text-black-50">Web developer</h3>
+            <a href="sobreMi.html" className="btn btn-info text-primary">Acerca de mi</a>
+        </div>
+    </main>
+    )
+}
+const Resumen = () => {
+    return (
+        <section className="container-xl d-flex gap-5 my-4">
+        <div className="perfil-info">
+            <h5 className="display-5 fw-light">Acerca de mi,</h5>
+            <h1 className="display-1">Soy <span className="text-uppercase fw-bold">Raul</span></h1>
+            <p>Soy un estudiante apasionado de programación con una mente analítica, lógica y pragmática. Mi enfoque meticuloso y mi habilidad para resolver problemas me han permitido destacarme en el mundo de la programación. Siempre he sido alguien que disfruta enfrentando desafíos y encontrando soluciones innovadoras y efectivas.</p>
+        </div>
+        <div className="perfil">
+        </div>
+    </section>
+    )
+}
 export default function Home() {
   return (
-    <Header />
+    <div className="bg-dark text-success">
+        <Header />
+        <Main />
+        <Resumen />
+    </div>
   )
 }
