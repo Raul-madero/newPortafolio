@@ -1,4 +1,6 @@
 import '../Sass/app.scss'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   return (
@@ -63,12 +65,55 @@ const Resumen = () => {
     </section>
     )
 }
+const Tecnologias = () => {
+    return (
+        <section className="container-xl tecnologias">
+        <div className="container-fluid text-center p-4 bg-dark">
+            <h2>Algunas Metodologias y Tecnologias con las que trabajo</h2>
+            <div className="row gx-2">
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <FontAwesomeIcon icon="html5" />
+                </div>
+                {/* <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-css3 fa-2xl" style="color: #e67e22;"></i>
+                </div>
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-js fa-2xl" style="color: #e67e22;"></i>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-bootstrap fa-2xl" style="color: #e67e22;"></i>
+                </div>
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-sass fa-2xl" style="color: #e67e22;"></i>
+                </div>
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-php fa-2xl" style="color: #e67e22;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-react fa-2xl" style="color: #e67e22;"></i>
+                </div>
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-python fa-2xl" style="color: #e67e22;"></i>
+                </div>
+                <div className="col p-4 border border-info g-3 rounded-3 mx-2">
+                    <i className="fa-brands fa-angular fa-2xl" style="color: #e67e22;"></i>
+                </div> */}
+            </div>
+        </div>
+    </section>
+    )
+}
 export default function Home() {
   return (
     <div className="bg-dark text-success">
         <Header />
         <Main />
         <Resumen />
+        <Tecnologias />
     </div>
   )
 }
