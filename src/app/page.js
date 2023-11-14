@@ -1,6 +1,4 @@
 import '../Sass/app.scss'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   return (
@@ -72,7 +70,7 @@ const Tecnologias = () => {
             <h2>Algunas Metodologias y Tecnologias con las que trabajo</h2>
             <div className="row gx-2">
                 <div className="col p-4 border border-info g-3 rounded-3 mx-2">
-                    <FontAwesomeIcon icon="html5" />
+                    
                 </div>
                 {/* <div className="col p-4 border border-info g-3 rounded-3 mx-2">
                     <i className="fa-brands fa-css3 fa-2xl" style="color: #e67e22;"></i>
