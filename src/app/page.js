@@ -103,7 +103,7 @@ const Tecnologias = () => {
                     <i className="fa-brands fa-php fa-2xl" style={{color}}></i>
                 </div>
             </div>
-            <div class="row">
+            <div className="row">
                 <div className="col p-4 border border-info g-3 rounded-3 mx-2">
                     <i className="fa-brands fa-react fa-2xl" style={{color}}></i>
                 </div>
@@ -143,10 +143,10 @@ const CarruselProyectos = (props) => {
 }
 const Proyectos = () => {
     return (
-        <section class="container-xl proyectos my-5">
-        <div class="container-fluid text-center">
-            <h2 class="my-4 mt-4">Algunos de mis Proyectos</h2>
-            <div class="row">
+        <section className="container-xl proyectos my-5">
+        <div className="container-fluid text-center">
+            <h2 className="my-4 mt-4">Algunos de mis Proyectos</h2>
+            <div className="row">
                 <div className="col"></div>
                     <CarruselProyectos url={dataCarrusel.rockBand.url} img={rockbandImg} cardTitle={dataCarrusel.rockBand.cardTitle} description={dataCarrusel.rockBand.description} />
                     <div className="col"></div>
@@ -168,7 +168,7 @@ const Footer = () => {
                     <a href="https://walink.co/b43304" className="btn btn-info">Contactame</a>
                 </div>
                 <div className="col align-items-center my-2 md-m-0">
-                    <a href="index.html" className="navbar-brand text-dark fs-1">Raul<strong class="text-info">Madero</strong></a>
+                    <a href="index.html" className="navbar-brand text-dark fs-1">Raul<strong className="text-info">Madero</strong></a>
                 </div>
                 <div className="col align-items-center my-2 md-m-0">
                     <div className="row align-items-center justify-content-center">
@@ -179,12 +179,12 @@ const Footer = () => {
                         </div>
                         <div className="col align-items-center">
                             <a href="https://github.com/Raul-madero" target="blank">
-                                <i class="fa-brands fa-github fa-2xl" style={{color}}></i>
+                                <i className="fa-brands fa-github fa-2xl" style={{color}}></i>
                             </a>
                         </div>
                         <div className="col align-items-center">
                             <a href="https://twitter.com/rmaderoIV" target="blank">
-                                <i class="fa-brands fa-x-twitter fa-2xl" style={{color}}></i>
+                                <i className="fa-brands fa-x-twitter fa-2xl" style={{color}}></i>
                             </a>
                         </div>
                     </div>
