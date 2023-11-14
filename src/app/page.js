@@ -64,13 +64,14 @@ const Resumen = () => {
     )
 }
 const Tecnologias = () => {
+    let color = "#e67E22"
     return (
         <section className="container-xl tecnologias">
         <div className="container-fluid text-center p-4 bg-dark">
             <h2>Algunas Metodologias y Tecnologias con las que trabajo</h2>
             <div className="row gx-2">
                 <div className="col p-4 border border-info g-3 rounded-3 mx-2">
-                    
+                <i className="fa-brands fa-css3 fa-2xl" style={color}></i>
                 </div>
                 {/* <div className="col p-4 border border-info g-3 rounded-3 mx-2">
                     <i className="fa-brands fa-css3 fa-2xl" style="color: #e67e22;"></i>
@@ -99,8 +100,8 @@ const Tecnologias = () => {
                 </div>
                 <div className="col p-4 border border-info g-3 rounded-3 mx-2">
                     <i className="fa-brands fa-angular fa-2xl" style="color: #e67e22;"></i>
-                </div> */}
-            </div>
+                </div>*/}
+            </div> 
         </div>
     </section>
     )
@@ -112,6 +113,7 @@ export default function Home() {
         <Main />
         <Resumen />
         <Tecnologias />
+        <script src="https://kit.fontawesome.com/89daf2435a.js" crossorigin="anonymous"></script>
     </div>
   )
 }
