@@ -1,8 +1,9 @@
 import '../Sass/app.scss';
 import Image from 'next/image';
-import rockbandImg from '../img/rockBand.webp';
-import blogDeCafeImg from '../img/blogDeCafe.webp';
-import travelImg from '../img/travel.webp';
+import logo from '../img/logo/logoDark.png'
+import rockbandImg from '../img/proyectos/rockBand.webp';
+import blogDeCafeImg from '../img/proyectos/blogDeCafe.webp';
+import travelImg from '../img/proyectos/travel.webp';
 
 const dataCarrusel = {
     rockBand: {
@@ -26,7 +27,7 @@ const Header = () => {
     <header className="container-xl sticky-top bg-secondary bg-gradient z-3">
         <nav className="navbar navbar-expand-lg bg-body-primary">
             <div className="container-fluid justify-content-between">
-                <a href="/" className="navbar-brand">Raul<strong>Madero</strong></a>
+                <a href="/" className="navbar-brand"><Image src={logo} alt="Logo" width={200} /></a>
                 <button 
                     className="navbar-toggler" 
                     type="button" 
