@@ -1,34 +1,23 @@
 import React from "react"
 import Image from "next/image"
 import logo from '../../img/logo/logoDark.png'
+import { Container, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle, Nav, NavLink } from "react-bootstrap"
+
 
 const Header = () => {
     return (
-    <header className="container-xl sticky-top bg-secondary bg-gradient z-3">
-        <nav className="navbar navbar-expand-lg bg-body-primary">
-            <div className="container-fluid justify-content-between">
-                <a href="/" className="navbar-brand"><Image src={logo} alt="Logo" width={200} /></a>
-                <button 
-                    className="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto">
-                        <li className="nav-item">
-                            <a href="/about" className="nav-link text-primary">Acerca de mi</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="/proyects" className="nav-link text-primary">Proyectos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <Navbar expand="md" className="bg-secondary container-xl" sticky="top">
+            <Container>
+                <NavbarBrand href="/"><Image src={logo} width={300} height={30} alt="Logo" /></NavbarBrand>
+                <NavbarToggle aria-controls="basic-navbar-bar"/>
+                <NavbarCollapse id="basic-navbar-bar">
+                    <Nav className="me-auto">
+                        <NavLink href="about" className="text-white">Acerca de mi</NavLink>
+                        <NavLink href="proyectos" className="text-white">Proyectos</NavLink>
+                    </Nav>
+                </NavbarCollapse>
+            </Container>
+        </Navbar>
 )
 }
 export default Header
